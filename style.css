@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-stack{
+    vertical-align: top;
+    font-size: .5em; 
+    width: 2em;
+}
