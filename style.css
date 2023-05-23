@@ -1,3 +1,48 @@
+@import url("./asset/css/header.css");
+@import url("./asset/css/footer.css");
+
+:root {
+    --color-grey-01: #D6D6D6;
+    --color-grey-02: #BABABA;
+    --color-grey-03: #979797;    
+    --color-grey-04: #757575;   
+    --color-grey-05: #535353;   
+    --color-grey-06: #303030;   
+    --color-grey-07: #282828;   
+    --color-grey-08: #202020;   
+    --color-grey-09: #181818;   
+    --color-grey-10: #101010;
+
+    --color-primary-01: #D6DFDC;
+    --color-primary-02: #BACAC5;
+    --color-primary-03: #97AFA7;
+    --color-primary-04: #75958A;
+    --color-primary-05: #537B6D;
+    --color-primary-06: #306050;
+    --color-primary-07: #285043;
+    --color-primary-08: #204035;
+    --color-primary-09: #183028;
+    --color-primary-10: #10201B;
+
+    --color-secondary-01: #F8F1DF;
+    --color-secondary-02: #F4E8CA;
+    --color-secondary-03: #EEDDAF;
+    --color-secondary-04: #E8D295;
+    --color-secondary-05: #E3C67B;
+    --color-secondary-06: #DDBB60;
+    --color-secondary-07: #B89C50;
+    --color-secondary-08: #937D40;
+    --color-secondary-09: #6F5E30;
+    --color-secondary-10: #4A3E20;
+
+    --shadow-header: 0px 5px 15px 5px rgba(83,83,83,0.5);
+
+    --font-primary: 'Quicksand', sans-serif;
+    --font-secondary: 'Playfair Display SC', serif;
+
+    --desktop-margin: 100px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +53,10 @@
     vertical-align: top;
     font-size: .5em; 
     width: 2em;
+}
+
+a, li{
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
 }

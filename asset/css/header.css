@@ -1,0 +1,87 @@
+header {
+    --background: var(--color-grey-01);
+    --text-color: var(--color-grey-06);
+    --shadow: none;
+
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 999;
+
+    display: grid;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav";
+    row-gap: 3em;
+
+    padding: 1em var(--desktop-margin);
+
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    background-color: var(--background);
+    box-shadow: var(--shadow);
+}
+
+.header__scrolled {
+    --background: var(--color-grey-01);
+    --shadow: var(--shadow-header);
+}
+
+.header__desktopLogo {
+    display: none;
+}
+
+.header__mobilLogo {
+    grid-area: logo;
+
+    display: inline-block;
+
+    width: fit-content;
+    padding: 1.5em 1em;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+header .burger {
+    grid-area: burger;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    font-size: 2em;
+}
+
+header nav {
+    grid-area: nav;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1.5em;
+
+    padding-bottom: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        --background: transparent;
+    }
+
+    header nav {
+        flex-direction: row;
+        align-items: center;
+
+        padding-bottom: auto;
+    }
+
+    .header__desktopLogo {
+        display: block;
+    }
+
+    .header__mobilLogo, header .burger {
+        display: none;
+    }
+}
+
+
