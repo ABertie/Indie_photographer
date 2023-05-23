@@ -5,9 +5,12 @@ footer {
     justify-content: space-between;
     gap: 3em;
 
-    padding: 3em var(--desktop-margin) var(--desktop-margin);
     width: 100%;
+    padding: 2em;
     background-color: var(--color-grey-05);
+
+    font-family: var(--font-primary);
+    color: var(--color-grey-010);
 }
 
 footer > nav{
@@ -28,7 +31,7 @@ footer > nav{
     align-items: end;
     
     padding: 1.5em 1em;
-    background-color: var(--color-grey-04);
+    background-color: var(--color-grey-06);
     border-radius: 50%;
 }
 
@@ -37,12 +40,31 @@ footer > nav{
     width: 100%;
 }
 
+.footer__primaryNav {
+    gap: .5em;
+}
+
 .footer__secondaryNav {
     display: flex;
     flex-direction: column;
+    gap: .5em;
+}
+
+.fa-circle {
+    --text-color: var(--color-grey-06);
+    color: var(--text-color);
+}
+
+.fa-instagram {
+    --text-color: var(--color-secondary-07);
+    color: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
+    footer {
+        padding: 3em var(--desktop-margin) var(--desktop-margin);
+    }
+
     footer > nav {
         flex-direction: row-reverse;
     }

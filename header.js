@@ -7,10 +7,10 @@ BURGER.addEventListener("click", function(){
     if (BUTTON.classList.contains("fa-bars")) {
         BUTTON.classList.add("fa-xmark")
         BUTTON.classList.remove("fa-bars")
-        NAV.style.display = "flex";
+        NAV.classList.add("Nav--show")
     } else if (BUTTON.classList.contains("fa-xmark")) {
         BUTTON.classList.add("fa-bars")
         BUTTON.classList.remove("fa-xmark")
-        NAV.style.display = "none";
+        NAV.classList.remove("Nav--show")
     }
 })

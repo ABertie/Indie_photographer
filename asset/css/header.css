@@ -11,7 +11,7 @@ header {
     grid-template-areas: 
     "logo burger"
     "nav nav" ;
-    row-gap: 2em;
+    row-gap: 1em;
 
     padding: 2em 4em 0 2em;
 
@@ -54,13 +54,23 @@ header .burger {
 header nav {
     grid-area: nav;
     
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    gap: 1.5em;
+    gap: 1em;
 
-    padding: 1em 0 100vh 2em;
+    height: 0;
+    padding: 1em 0 0 2em;
+    
+    transform: translateX(-150%);
+    transition: transform .5s ease-in-out;
+}
+
+.Nav--show {
+    padding: 3em 0 100vh 2em;
+
+    transform: translateX(0);
 }
 
 @media screen and (min-width: 1024px) {
@@ -71,11 +81,12 @@ header nav {
     }
 
     header nav {
-        display: flex;
         flex-direction: row;
         align-items: center;
 
         padding-bottom: auto;
+
+        transform: translateX(0);
     }
 
     .header__desktopLogo {

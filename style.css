@@ -49,9 +49,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--color-grey-02);
+}
+
 .fa-stack{
     vertical-align: top;
-    font-size: .5em; 
+    font-size: 1em; 
     width: 2em;
 }
 
