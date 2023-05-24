@@ -3,7 +3,7 @@ header {
     --text-color: var(--color-grey-06);
     --shadow: none;
 
-    position: fixed;
+    position: sticky;
     inset: 0 0 auto 0;
     z-index: 999;
 
@@ -13,7 +13,7 @@ header {
     "nav nav" ;
     row-gap: 1em;
 
-    padding: 2em 4em 0 2em;
+    padding: 1em 2em 0 2em;
 
     font-family: var(--font-secondary);
     color: var(--text-color);
@@ -36,9 +36,13 @@ header {
     display: inline-block;
 
     width: fit-content;
-    padding: 1.5em 1em;
+    padding: .7593em .5em;
     background-color: var(--text-color);
     border-radius: 50%;
+}
+
+.header__mobilLogo img {
+    height: 2em;
 }
 
 header .burger {
@@ -61,7 +65,7 @@ header nav {
     gap: 1em;
 
     height: 0;
-    padding: 1em 0 0 2em;
+    padding: 0;
     
     transform: translateX(-150%);
     transition: transform .5s ease-in-out;
@@ -84,7 +88,8 @@ header nav {
         flex-direction: row;
         align-items: center;
 
-        padding-bottom: auto;
+        height: auto;
+        padding: 0;
 
         transform: translateX(0);
     }

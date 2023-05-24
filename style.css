@@ -1,5 +1,6 @@
 @import url("./asset/css/header.css");
 @import url("./asset/css/footer.css");
+@import url("./asset/css/carosel.css");
 
 :root {
     --color-grey-01: #D6D6D6;
@@ -47,10 +48,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: var(--color-grey-02);
 }
 
 .fa-stack{
