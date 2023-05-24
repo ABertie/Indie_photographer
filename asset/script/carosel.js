@@ -26,7 +26,7 @@ window.addEventListener("keydown", function (e) {
         shuffleBack();
     }
 });
-CAROSEL_SLIDE.addEventListener("animationend", disabelAnimation4);
+CAROSEL_SLIDE.addEventListener("animationend", disabelAnimation);
 
 function highlightButton() {
     BUTTONS.forEach(function (button, i) {
@@ -66,18 +66,18 @@ function shuffleBack() {
     window.highlightButton();
 };
 
-function disabelAnimation4() {
+function disabelAnimation() {
     if (CAROSEL_SLIDE.classList.contains('animate__fadeOutRightBig')) {
-        CAROSEL_SLIDE.classList.remove('animate__fadeOutRightBig');
         CAROSEL_SLIDE.innerHTML = (SLIDE[index]);
+        CAROSEL_SLIDE.classList.remove('animate__fadeOutRightBig');
         CAROSEL_SLIDE.classList.add('animate__fadeInLeftBig');
     } else {
         CAROSEL_SLIDE.classList.remove('animate__fadeInLeftBig');
     };
 
     if (CAROSEL_SLIDE.classList.contains('animate__fadeOutLeftBig')) {
-        CAROSEL_SLIDE.classList.remove('animate__fadeOutLeftBig');
         CAROSEL_SLIDE.innerHTML = (SLIDE[index]);
+        CAROSEL_SLIDE.classList.remove('animate__fadeOutLeftBig');
         CAROSEL_SLIDE.classList.add('animate__fadeInRightBig');
     } else {
         CAROSEL_SLIDE.classList.remove('animate__fadeInRightBig');

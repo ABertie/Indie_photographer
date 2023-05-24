@@ -1,7 +1,6 @@
 header {
     --background: var(--color-grey-01);
     --text-color: var(--color-grey-06);
-    --shadow: none;
 
     position: sticky;
     inset: 0 0 auto 0;
@@ -18,12 +17,6 @@ header {
     font-family: var(--font-secondary);
     color: var(--text-color);
     background-color: var(--background);
-    box-shadow: var(--shadow);
-}
-
-.header__scrolled {
-    --background: var(--color-grey-01);
-    --shadow: var(--shadow-header);
 }
 
 .header__desktopLogo {
@@ -79,7 +72,7 @@ header nav {
 
 @media screen and (min-width: 1024px) {
     header {
-        --background: transparent;
+        --background: var(--color-white);
 
         padding: 1em var(--desktop-margin);
     }

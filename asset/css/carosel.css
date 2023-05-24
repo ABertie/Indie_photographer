@@ -1,25 +1,24 @@
 .carosel img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    
+    object-fit: contain;
 }
 
 .carosel {
+    --margin: 0;
     display: grid;
-    grid-template-columns: 15vw 70vw 15vw;
-    grid-template-rows: 95% 5%;
-    position: relative;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 95% auto;
+    
     align-items: center;
 
-    height: 80vh;
-    width: 90%;
+    margin: 1em var(--margin);
 }
 
 .carosel__backButton, .carosel__forwardButton {
     display: flex;
     
-    position: absolute;
-    z-index: 1;
     justify-self: center;
     
     padding: .1em;
@@ -48,14 +47,14 @@
 .carosel__slide {
     grid-column: 2/3;
     grid-row: 1/2;
-    width: 100%;
-    height: 100%;
-    position: relative;
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    
+    width: 100%;
+    height: 100%;
     
     text-align: center;
     font-size: x-large;
@@ -76,9 +75,9 @@
 .carosel__spot{
     height: max(1rem, 1.5vh);
     aspect-ratio: 1 / 1;
-    background-color: var(--color-grey-01);
-    border-radius: 50%;
     border: none;
+    border-radius: 50%;
+    background-color: var(--color-grey-01);
 }
 
 .carosel__spot:hover{
@@ -87,4 +86,10 @@
 
 .highlight {
     background-color: var(--color-grey-05);
+}
+
+@media screen and (min-width: 1024px) {
+    .carosel {
+        --margin: var(--desktop-margin);
+    }
 }

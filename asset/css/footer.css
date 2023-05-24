@@ -5,6 +5,9 @@ footer {
     justify-content: space-between;
     gap: 3em;
 
+    position: relative;
+    z-index: 900;
+
     width: 100%;
     padding: 2em;
     background-color: var(--color-grey-05);

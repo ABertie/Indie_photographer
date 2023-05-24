@@ -3,6 +3,8 @@
 @import url("./asset/css/carosel.css");
 
 :root {
+    --color-white: #FFFFFF;
+
     --color-grey-01: #D6D6D6;
     --color-grey-02: #BABABA;
     --color-grey-03: #979797;    
@@ -36,7 +38,7 @@
     --color-secondary-09: #6F5E30;
     --color-secondary-10: #4A3E20;
 
-    --shadow-header: 0px 5px 15px 5px rgba(83,83,83,0.5);
+    --shadow-header: 0px 1px 10px 1px rgba(83,83,83,0.1);
 
     --font-primary: 'Quicksand', sans-serif;
     --font-secondary: 'Playfair Display SC', serif;
