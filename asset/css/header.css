@@ -12,7 +12,7 @@ header {
     "nav nav" ;
     row-gap: 1em;
 
-    padding: 1em 2em 0 2em;
+    padding: 1em 1em 0 1em;
 
     font-family: var(--font-secondary);
     color: var(--text-color);
@@ -29,13 +29,13 @@ header {
     display: inline-block;
 
     width: fit-content;
-    padding: .7593em .5em;
+    padding: .414em .25em;
     background-color: var(--text-color);
     border-radius: 50%;
 }
 
 .header__mobilLogo img {
-    height: 2em;
+    height: 1.5em;
 }
 
 header .burger {
@@ -45,7 +45,7 @@ header .burger {
     align-items: center;
     justify-content: end;
 
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 header nav {
@@ -65,7 +65,7 @@ header nav {
 }
 
 .Nav--show {
-    padding: 3em 0 100vh 2em;
+    padding: 2em 0 90vh 1em;
 
     transform: translateX(0);
 }
@@ -82,7 +82,6 @@ header nav {
         align-items: center;
 
         height: auto;
-        padding: 0;
 
         transform: translateX(0);
     }
