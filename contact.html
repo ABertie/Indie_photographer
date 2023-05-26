@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="./asset/script/header.js" defer></script>
+    <!-- <script src="./asset/script/contact.js"></script>   -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="header__mobilLogo"><img src="./asset/icons/logo__icon.svg" alt="logo icon carmera"></a>
+        <div class="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="header__nav">
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <a href="index.html" class="header__desktopLogo"><img src="./asset/icons/logo.svg" alt="logo icon carmera Rowena Reuss"></a>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <form class="submitForm" action="contact.html" novalidate>
+
+            <div class="submitForm__block">
+
+                <div class="submitForm__field">
+                    <label for="submitForm__name" class="submitForm__label">Navn:</label>
+                    <input type="text" id="submitForm__name" class="submitForm__input" name="name" placeholder="Dit navn" required>
+                    <span class="submitForm__massage"></span>
+                </div>
+
+                <div class="submitForm__field">
+                    <label for="submitForm__email" class="submitForm__label">Email:</label>
+                    <input type="email" id="submitForm__email" class="submitForm__input" name="email" placeholder="Din email" required>
+                    <span class="submitForm__massage"></span>
+                </div>
+
+                <div class="submitForm__field">
+                    <label for="submitForm__tlf" class="submitForm__label">Telefon:</label>
+                    <input type="tel" id="submitForm__tlf" class="submitForm__input" name="phoneNumber" placeholder="Dit telefonnummer (option)">
+                    <span class="submitForm__massage"></span>
+                </div>
+
+                <div class="submitForm__field">
+                    <label for="submitForm__offer" class="submitForm__label">Pakke:</label>
+                    <select name="priceOffer" id="submitForm__offer">
+                        <option value="default">Vælg pakke(option)</option>
+                        <optgroup label="Bryllup">
+                            <option value="Bryllup">Portrætter - 4995 kr</option>
+                            <option value="Bryllup">Forberedelse + Vielse + Portrætter - 5995 kr.</option>
+                            <option value="Bryllup">Forberedelse + Vielse + Portrætter + Recception + Første del af
+                                festen - 8995 kr.</option>
+                            <option value="Bryllup">Heldags Bryllup - 11995 kr.</option>
+                        </optgroup>
+                        <optgroup label="Session on location (familie, konfirmation osv.) - 495 kr.">
+                            <option value="Session">Session 5 filer + 1000 kr.</option>
+                            <option value="Session">Session 10 filer + 1750 kr.</option>
+                            <option value="Session">Session 20 filer + 2595 kr.</option>
+                            <option value="Session">Session All filer + 2995 kr.</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="submitForm__field">
+                <label for="submitForm__text" class="submitForm__label">Besked:</label>
+                <textarea type="text" id="submitForm__text" class="submitForm__input" name="text" placeholder="Skiv din besked her" required></textarea>
+            </div>
+
+            <!-- <button type="submit" class="submitForm__button">Submit</button> -->
+
+            <script>
+                const FORM = document.querySelector(".submitForm")
+                const BLOCK = document.querySelector(".submitForm__block")
+
+                let BUTTON = document.createElement("button")
+                BUTTON.classList.add("submitForm__button")
+                BUTTON.type = "submit"
+                BUTTON.innerHTML = "Submit"
+
+                if (screen.width > 768) {
+                    BLOCK.appendChild(BUTTON)
+                } else {
+                    FORM.appendChild(BUTTON)
+                }  
+            </script>
+
+        </form>
+    </main>
+</body>
+
+</html>

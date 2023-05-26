@@ -1,4 +1,6 @@
-footer {    
+footer {   
+    --text-color: var(--color-grey-010);
+    
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -11,9 +13,6 @@ footer {
     width: 100%;
     padding: 2em;
     background-color: var(--color-grey-05);
-
-    font-family: var(--font-primary);
-    color: var(--color-grey-010);
 }
 
 footer > nav{
@@ -55,7 +54,6 @@ footer > nav{
 
 .fa-circle {
     --text-color: var(--color-grey-06);
-    color: var(--text-color);
 }
 
 .fa-instagram {

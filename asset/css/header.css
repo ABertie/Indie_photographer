@@ -1,6 +1,6 @@
 header {
-    --background: var(--color-grey-01);
-    --text-color: var(--color-grey-06);
+    --background-color: var(--color-grey-01);
+    --font: var(--font-secondary);
 
     position: sticky;
     inset: 0 0 auto 0;
@@ -14,9 +14,8 @@ header {
 
     padding: 1em 1em 0 1em;
 
-    font-family: var(--font-secondary);
-    color: var(--text-color);
-    background-color: var(--background);
+    background-color: var(--background-color);
+    font-family: var(--font);
 }
 
 .header__desktopLogo {
@@ -72,7 +71,7 @@ header nav {
 
 @media screen and (min-width: 1024px) {
     header {
-        --background: var(--color-white);
+        --background-color: var(--color-white);
 
         padding: 1em var(--desktop-margin);
     }

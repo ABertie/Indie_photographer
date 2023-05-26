@@ -1,6 +1,7 @@
 @import url("./asset/css/header.css");
 @import url("./asset/css/footer.css");
 @import url("./asset/css/carosel.css");
+@import url("./asset/css/form.css");
 
 :root {
     --color-white: #FFFFFF;
@@ -52,14 +53,36 @@
     box-sizing: border-box;
 }
 
+body{
+    --font: var(--font-primary);
+    --text-color: var(--color-grey-06);
+
+    font-family: var(--font);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    --font: var(--font-secondary);
+    font-family: var(--font);
+}
+
 .fa-stack{
     vertical-align: top;
     font-size: 1em; 
     width: 2em;
 }
 
+input, button, textarea, select {
+    font-family: var(--font);
+}
+
 a, li{
     text-decoration: none;
     list-style-type: none;
     color: inherit;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.25em;
 }

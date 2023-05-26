@@ -27,6 +27,7 @@
 }
 
 .carosel__backButton, .carosel__forwardButton {
+    --text-color: var(--color-grey-05);
     --width: auto;
 
     display: flex;
@@ -40,12 +41,11 @@
     border: none;
     background-color: transparent;
     
-    color: var(--color-grey-05);
     font-size: max(2em, 5vw);
 }
 
 .carosel__backButton:hover, .carosel__forwardButton:hover{
-    color: var(--color-grey-03);
+    --text-color: var(--color-grey-03);
 }
 
 .carosel__slide {  

@@ -1,0 +1,43 @@
+.submitForm, .submitForm__block, .submitForm__field{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.submitForm {
+    justify-content: center;
+        
+    max-width: 25em;
+    padding: 2em;
+}
+
+.submitForm textarea {
+    height: 10em;
+    resize: vertical;
+}
+
+.submitForm button {
+    width: fit-content;
+    padding: .5em 2em;
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .submitForm {
+        flex-direction: row;
+        gap: 3em;
+
+        max-width: 100%;
+        padding: 0 var(--desktop-margin);
+    }
+
+    .submitForm>.submitForm__field, .submitForm__block{
+        width: 25em;
+    }
+
+    .submitForm textarea {
+        height: 100%;
+        width: 100%;
+        resize: none;
+    }
+}
