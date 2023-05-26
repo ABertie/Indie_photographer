@@ -1,0 +1,69 @@
+.card__container {
+    display: grid;
+    grid-template-columns: repeat(var(--repeat), 1fr);
+    gap: 1em;
+
+    padding: 1em; 
+}
+
+.card__secondaryContainer {
+    display: grid;
+    grid-template-columns: repeat(var(--repeat), 1fr);
+    grid-template-rows: 1em auto 1em;
+    
+    padding: 1em; 
+}
+
+.card__secondaryContainer .card__column {
+    grid-row: 2/3;
+}
+
+.card__column{
+    --background-color: var(--color-grey-01);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 1em;
+    background-color: var(--background-color);
+    border-radius: 1em;
+    
+    font-size: 0.8em;
+}
+
+.card__column h1{
+    font-size: 1.25em;
+}
+
+.card__column p{
+    margin: 1em 0 auto;
+}
+
+.card__column span{
+    align-self: flex-end;
+}
+
+.card__exceptional{
+    --background-color: var(--color-primary-03);
+    grid-row: 1/4;
+
+    padding: 1em;
+}
+
+.repeat1{ --repeat: 1;}
+.repeat2{ --repeat: 2;}
+.repeat3{ --repeat: 3;}
+.repeat4{ --repeat: 4;}
+
+@media screen and (max-width: 1024px) {
+    .repeat3, .repeat4{
+        --repeat: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .repeat2, .repeat3, .repeat4{
+        --repeat: 1;
+    }
+}

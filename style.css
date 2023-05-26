@@ -1,5 +1,6 @@
 @import url("./asset/css/header.css");
 @import url("./asset/css/footer.css");
+@import url("./asset/css/cards.css");
 @import url("./asset/css/carosel.css");
 @import url("./asset/css/form.css");
 
@@ -86,3 +87,16 @@ span {
     font-weight: bold;
     font-size: 1.25em;
 }
+
+/* Prices */
+.prices{
+    --margin: 1em;
+    margin: 1em var(--margin);
+}
+
+@media screen and (min-width: 1024px){
+    .prices{
+        --margin: var(--desktop-margin);
+    }
+}
+
