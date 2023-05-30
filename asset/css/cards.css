@@ -18,6 +18,31 @@
     grid-row: 2/3;
 }
 
+.card__columnContainer {
+    column-count: var(--repeat);
+    column-gap: 1em;
+}
+
+.card__columnContainer > * {
+    display: block;
+    padding: .4em 0;
+}
+
+.card__columnContainer--card {
+    position: relative;
+}
+
+.card__columnContainer--card p{
+    position: absolute;
+    inset: auto 0 .4em 0;
+
+    padding: 1em;
+    background-color: var(--color-primary-03);
+
+    color: var(--color-grey-06);
+    opacity: .8;
+}
+
 .card__column{
     --background-color: var(--color-grey-01);
     
@@ -25,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     
-    padding: 1em;
+    padding: 2em;
     background-color: var(--background-color);
     border-radius: 1em;
     
@@ -37,7 +62,8 @@
 }
 
 .card__column p{
-    margin: 1em 0 auto;
+    margin: 0 0 auto;
+    padding: 1em 0;
 }
 
 .card__column span{
@@ -48,7 +74,7 @@
     --background-color: var(--color-primary-03);
     grid-row: 1/4;
 
-    padding: 1em;
+    padding: 2em;
 }
 
 .repeat1{ --repeat: 1;}

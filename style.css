@@ -88,15 +88,27 @@ span {
     font-size: 1.25em;
 }
 
-/* Prices */
-.prices{
+img{
+    display: block;
+    
+    height: auto;
+    width: 100%;
+}
+
+/* Main */
+main{
     --margin: 1em;
     margin: 1em var(--margin);
+
+}
+
+main a {
+    display: block;
+    text-align: center;
 }
 
 @media screen and (min-width: 1024px){
-    .prices{
+    main{
         --margin: var(--desktop-margin);
     }
 }
-

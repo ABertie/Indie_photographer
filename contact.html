@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Rowena Reuss</title>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -21,7 +21,6 @@
 
     <!-- Script -->
     <script src="./asset/script/header.js" defer></script>
-    <!-- <script src="./asset/script/contact.js"></script>   -->
 </head>
 
 <body>
@@ -32,7 +31,7 @@
         </div>
         <nav class="header__nav">
             <li><a href="prices.html">Prices</a></li>
-            <li><a href="photography.html">Photography</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
             <a href="index.html" class="header__desktopLogo"><img src="./asset/icons/logo.svg" alt="logo icon carmera Rowena Reuss"></a>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -40,7 +39,7 @@
     </header>
 
     <main>
-        <form class="submitForm" action="contact.html" novalidate>
+        <form class="submitForm" novalidate>
 
             <div class="submitForm__block">
 
@@ -100,7 +99,7 @@
                 BUTTON.type = "submit"
                 BUTTON.innerHTML = "Submit"
 
-                if (screen.width > 768) {
+                if (screen.width >= 768) {
                     BLOCK.appendChild(BUTTON)
                 } else {
                     FORM.appendChild(BUTTON)
