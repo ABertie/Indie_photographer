@@ -90,7 +90,7 @@ span {
 
 img{
     display: block;
-    
+
     height: auto;
     width: 100%;
 }
@@ -98,7 +98,7 @@ img{
 /* Main */
 main{
     --margin: 1em;
-    margin: 1em var(--margin);
+    margin: 0 var(--margin);
 
 }
 
@@ -111,4 +111,8 @@ main a {
     main{
         --margin: var(--desktop-margin);
     }
+}
+
+.galleries__padding {
+    padding: 0 10vw; 
 }

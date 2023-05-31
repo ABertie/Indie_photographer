@@ -28,7 +28,7 @@ header {
     display: inline-block;
 
     width: fit-content;
-    padding: .414em .25em;
+    padding: .5em .25em;
     background-color: var(--text-color);
     border-radius: 50%;
 }
