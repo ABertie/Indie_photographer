@@ -1,5 +1,5 @@
 header {
-    --background-color: var(--color-grey-01);
+    --background-color: var(--color-primary-03);
     --font: var(--font-secondary);
 
     position: sticky;

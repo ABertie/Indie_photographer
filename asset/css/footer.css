@@ -1,5 +1,5 @@
 footer {   
-    --text-color: var(--color-grey-010);
+    --text-color: var(--color-grey-06);
     
     display: flex;
     flex-direction: column;
@@ -12,17 +12,14 @@ footer {
 
     width: 100%;
     padding: 2em;
-    background-color: var(--color-grey-05);
+    background-color: var(--color-primary-05);
+    margin-top: 5vh;
 
     font-weight: bold;
+    color: var(--text-color);
 }
 
 footer > nav{
-/*     display: grid;
-    grid-template: 
-    "logo ..." 10vw
-    "secondary primary" 90px;
-    grid-row-gap: var(--desktop-margin); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,7 +32,7 @@ footer > nav{
     align-items: end;
     
     padding: 1.5em 1em;
-    background-color: var(--color-grey-06);
+    background-color: var(--text-color);
     border-radius: 50%;
 }
 
@@ -55,7 +52,7 @@ footer > nav{
 }
 
 .fa-circle {
-    --text-color: var(--color-grey-06);
+    --text-color: var(--text-color);
 }
 
 .fa-instagram {

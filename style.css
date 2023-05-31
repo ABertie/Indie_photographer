@@ -74,6 +74,8 @@ h1, h2, h3 {
 }
 
 input, button, textarea, select {
+    padding: .5em;
+
     font-family: var(--font);
 }
 
@@ -98,8 +100,10 @@ img{
 /* Main */
 main{
     --margin: 1em;
-    margin: 0 var(--margin);
 
+    min-height: 80vh;
+
+    margin: 1em var(--margin);
 }
 
 main a {
