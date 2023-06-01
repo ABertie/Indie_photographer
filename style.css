@@ -3,9 +3,10 @@
 @import url("./asset/css/cards.css");
 @import url("./asset/css/carosel.css");
 @import url("./asset/css/form.css");
+@import url("./asset/css/about.css");
 
 :root {
-    --color-white: #FFFFFF;
+    --color-white: #eeeeee;
 
     --color-grey-01: #D6D6D6;
     --color-grey-02: #BABABA;
@@ -57,6 +58,9 @@
 body{
     --font: var(--font-primary);
     --text-color: var(--color-grey-06);
+    --background-color: var(--color-white);
+    
+    background-color: var(--background-color);
 
     font-family: var(--font);
     color: var(--text-color);
@@ -75,6 +79,9 @@ h1, h2, h3 {
 
 input, button, textarea, select {
     padding: .5em;
+    border: 1px solid var(--text-color);
+    border-radius: 2px;
+    background-color: transparent;
 
     font-family: var(--font);
 }
