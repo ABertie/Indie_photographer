@@ -2,10 +2,10 @@ const CAROSEL_SLIDE = document.querySelector(".carosel__slide")
 const CAROSEL_FORWARD = document.querySelector(".carosel__forwardButton")
 const CAROSEL_BACK = document.querySelector(".carosel__backButton")
 const SPOTS = document.querySelector(".carosel__spots")
-const SLIDE = ['<img src="./asset/img/197A1499.jpg" alt="Flowers tree">',
-    '<img src="./asset/img/197A5168.jpg" alt="Field with two people">',
-    '<img src="./asset/img/IMG_0034.jpg" alt="Girl with a flowery braid looking out at the water">',
-    '<img src="./asset/img/IMG_4708.jpg" alt="A bride with her hair up looking down at her bucket">']
+const SLIDE = ['<img src="./asset/img/Landskab/197A1499.jpg" alt="Flowers tree">',
+    '<img src="./asset/img/Forlovelser/197A5168.jpg" alt="Field with two people">',
+    '<img src="./asset/img/Hår/IMG_0034.jpg" alt="Girl with a flowery braid looking out at the water">',
+    '<img src="./asset/img/Bryllup4/IMG_4708.jpg" alt="A bride with her hair up looking down at her bucket">']
 
 var index = 0
 CAROSEL_SLIDE.innerHTML = (SLIDE[index])

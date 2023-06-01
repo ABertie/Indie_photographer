@@ -113,11 +113,6 @@ main{
     margin: 1em var(--margin);
 }
 
-main a {
-    display: block;
-    text-align: center;
-}
-
 @media screen and (min-width: 1024px){
     main{
         --margin: var(--desktop-margin);

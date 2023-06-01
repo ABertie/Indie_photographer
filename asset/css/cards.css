@@ -11,11 +11,15 @@
     grid-template-columns: repeat(var(--repeat), 1fr);
     grid-template-rows: 1em auto 1em;
     
-    padding: 1em; 
+    padding: 0 7em; 
 }
 
-.card__secondaryContainer .card__column {
+.card__secondaryContainer .card {
     grid-row: 2/3;
+}
+
+.card__secondaryContainer .card__exceptional {
+    grid-row: 1/4;
 }
 
 .card__columnContainer {
@@ -47,7 +51,12 @@
     opacity: .8;
 }
 
-.card__column{
+.card__columnContainer--card a {
+    display: block;
+    text-align: center;
+}
+
+.card{
     --background-color: var(--color-primary-03);
     --text-color: var(--color-grey-08);
     --secondary-text-color: var(--color-secondary-05);
@@ -64,25 +73,41 @@
     color: var(--text-color);
 }
 
-.card__column h1{
+.card h1{
     font-size: 1.25em;
 }
 
-.card__column p{
-    margin: 0 0 auto;
+.card p{
     padding: 1em 0;
 }
 
-.card__column span{
-    align-self: flex-end;
+.card p:last-of-type{
+    margin: 0 0 auto;
+}
 
+.card span{
+    align-self: flex-end;
+    
     color: var(--secondary-text-color);
+}
+
+.card .card {
+    margin: .5em 0;
+}
+
+.card__row{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__row span{
+    align-self: inherit;
 }
 
 .card__exceptional{
     --background-color: var(--color-secondary-03);
     --secondary-text-color: var(--color-secondary-07);
-    grid-row: 1/4;
 
     padding: 2em;
 }
