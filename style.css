@@ -2,6 +2,7 @@
 @import url("./asset/css/footer.css");
 @import url("./asset/css/cards.css");
 @import url("./asset/css/carosel.css");
+@import url("./asset/css/homePage.css");
 @import url("./asset/css/form.css");
 @import url("./asset/css/about.css");
 
@@ -97,6 +98,10 @@ span {
     font-size: 1.25em;
 }
 
+a span {
+    font-size: 1em;
+}
+
 img{
     display: block;
 
@@ -108,9 +113,12 @@ img{
 main{
     --margin: 1em;
 
-    min-height: 80vh;
+    min-height: 80vh; 
+}
 
+main > * {
     margin: 1em var(--margin);
+    width: auto;
 }
 
 @media screen and (min-width: 1024px){
@@ -121,4 +129,12 @@ main{
 
 .galleries__padding {
     padding: 0 10vw; 
+}
+
+.homePage__about {
+    --background-color: var(--color-primary-04);
+
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 3em var(--margin);
 }

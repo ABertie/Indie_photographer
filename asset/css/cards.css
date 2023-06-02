@@ -10,8 +10,6 @@
     display: grid;
     grid-template-columns: repeat(var(--repeat), 1fr);
     grid-template-rows: 1em auto 1em;
-    
-    padding: 0 7em; 
 }
 
 .card__secondaryContainer .card {
@@ -123,7 +121,13 @@
     }
 }
 
+
 @media screen and (max-width: 768px) {
+    .card__secondaryContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
     .repeat2, .repeat3, .repeat4{
         --repeat: 1;
     }

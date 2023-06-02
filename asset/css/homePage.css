@@ -1,0 +1,27 @@
+.homePage{
+    display: grid;
+    gap: 10vh;
+}
+
+.homePage .card__secondaryContainer{
+    margin-bottom: .5em;
+}
+
+.card__secondaryContainer + button{
+    display: block;
+    margin: 0 auto;
+}
+
+.homePage + footer {
+    margin-top: 10em;
+}
+
+.homePage a button {
+    --text-color: var(--color-grey-01);
+
+    padding: 1em 3em;
+    background-color: var(--color-grey-06);
+    border: none;
+
+    color: var(--text-color);
+}

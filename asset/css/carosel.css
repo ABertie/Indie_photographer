@@ -6,7 +6,8 @@
     align-items: center;
 
     height: var(--height);
-    width: 100%;
+    width: auto;
+    margin-top: 1em;
 }
 
 .carosel__slider {
@@ -28,7 +29,6 @@
 
 .carosel__backButton, .carosel__forwardButton {
     --text-color: var(--color-grey-05);
-    --width: auto;
 
     display: flex;
     justify-content: center;
@@ -36,8 +36,7 @@
     position: relative;
     z-index: 1;
     
-    width: var(--width);
-    padding: auto;
+    width: 0;
     border: none;
     background-color: transparent;
     
@@ -81,14 +80,14 @@
     background-color: var(--color-grey-05);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .carosel {
-        --height: 75vh;
+        margin-top: 0;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .carosel__backButton, .carosel__forwardButton {
-        --width: var(--desktop-margin);
+@media screen and (min-width: 768px) {
+    .carosel {
+        --height: calc(100vh - 125px);
     }
 }
