@@ -2,9 +2,9 @@
 @import url("./asset/css/footer.css");
 @import url("./asset/css/cards.css");
 @import url("./asset/css/carosel.css");
-@import url("./asset/css/homePage.css");
 @import url("./asset/css/form.css");
 @import url("./asset/css/about.css");
+@import url("./asset/css/homePage.css");
 
 :root {
     --color-white: #eeeeee;
@@ -102,6 +102,10 @@ a span {
     font-size: 1em;
 }
 
+span a {
+    display: block;
+}
+
 img{
     display: block;
 
@@ -129,12 +133,4 @@ main > * {
 
 .galleries__padding {
     padding: 0 10vw; 
-}
-
-.homePage__about {
-    --background-color: var(--color-primary-04);
-
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 3em var(--margin);
 }

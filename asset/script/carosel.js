@@ -1,6 +1,4 @@
 const CAROSEL_SLIDE = document.querySelector(".carosel__slide")
-const CAROSEL_FORWARD = document.querySelector(".carosel__forwardButton")
-const CAROSEL_BACK = document.querySelector(".carosel__backButton")
 const SPOTS = document.querySelector(".carosel__spots")
 const SLIDE = ['<img src="./asset/img/Landskab/197A1499.jpg" alt="Flowers tree">',
     '<img src="./asset/img/Forlovelser/197A5168.jpg" alt="Field with two people">',
@@ -17,8 +15,6 @@ SLIDE.forEach(function () {
 })
 const BUTTONS = SPOTS.querySelectorAll("button")
 
-CAROSEL_FORWARD.addEventListener("click", shuffleForward)
-CAROSEL_BACK.addEventListener("click", shuffleBack)
 window.addEventListener("keydown", function (e) {
     if (e.key == 'ArrowRight') {
         shuffleForward()
@@ -85,3 +81,4 @@ function disabelAnimation() {
     
 }
 
+window.setInterval(shuffleForward, 10000)

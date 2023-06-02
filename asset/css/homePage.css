@@ -3,6 +3,14 @@
     gap: 10vh;
 }
 
+.homePage__about {
+    --background-color: var(--color-primary-04);
+
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 3em var(--margin);
+}
+
 .homePage .card__secondaryContainer{
     margin-bottom: .5em;
 }
@@ -17,10 +25,10 @@
 }
 
 .homePage a button {
-    --text-color: var(--color-grey-01);
+    --text-color: var(--color-secondary-06);
 
     padding: 1em 3em;
-    background-color: var(--color-grey-06);
+    background-color: var(--color-grey-05);
     border: none;
 
     color: var(--text-color);
