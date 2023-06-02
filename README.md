@@ -4,7 +4,7 @@ En Fotograf og hårstyler hjemmeside med prisliste, formular så man kan book he
 
 Siden har en header og en footer med noget navigation og links
 På forsiden er der en billede slider som automatisk og manuelt kan skifte samt nogle Cards med en læs mere knap der kan sende en videre til en af de andre sider
-Der er en side med en formular hvor man kan sende en besked til fotografen 
+Der er en side med en formular hvor man kan sende en besked til fotografen (der er kun standard validering på formularen) 
 
 
 Her er linket til hjemmesiden:
