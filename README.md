@@ -9,7 +9,7 @@ Der er en side med en formular hvor man kan sende en besked til fotografen
 
 Her er linket til hjemmesiden:
 
-     https://abertie.github.io/Indie_photographer/
+     https://abertie.github.io/Indie_photographer/index.html
 
 Jeg ændrede meget på udseendet da jeg begryndte at kode og har ikke helt haft tid til at ændre stylguiden men her er link til dem:
 
